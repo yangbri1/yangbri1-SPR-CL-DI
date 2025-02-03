@@ -26,14 +26,17 @@ import org.springframework.stereotype.Component;
 @Component
 public class ArithmeticPresentationLayer {
 
+    @Autowired
     private Adder adder;
     private Multiplier multiplier;
     private Squarer squarer;
 
+    @Autowired
     public void setMultiplier(Multiplier multiplier) {
         this.multiplier = multiplier;
     }
 
+    @Autowired
     public ArithmeticPresentationLayer(Squarer squarer) {
         this.squarer = squarer;
     }
@@ -45,6 +48,7 @@ public class ArithmeticPresentationLayer {
 
         // Retrieve the RoryApplication bean from the container
         ArithmeticPresentationLayer app = context.getBean(ArithmeticPresentationLayer.class);
+
     }
 
     /**

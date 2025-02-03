@@ -23,6 +23,7 @@ public class Multiplier {
      * Generally, field injection is not recommended, but it works for this example.
      * @param adder
      */
+    @Autowired
     Adder adder;
 
     /**
