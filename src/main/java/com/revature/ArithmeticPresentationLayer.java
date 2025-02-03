@@ -31,7 +31,7 @@ public class ArithmeticPresentationLayer {
     private Adder adder; 
     private Multiplier multiplier;
     private Squarer squarer;
-
+            
     // @Autowired annotation via setter injection
     @Autowired
     public void setMultiplier(Multiplier multiplier) {
