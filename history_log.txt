@@ -1,0 +1,7 @@
+commit 5c72e79b4c0836002885cbd960ebda003de7b112
+Author: Brian Yang <yangbri1@msu.edu>
+Date:   Mon Feb 3 01:50:03 2025 +0000
+
+    Injected '@Autowired' annotations onto fields 'adder' in 'Multipler.java' class & 'multipler' in 'Squarer.java' class. Additionally, included '@Autowired' annotation onto 'private Adder adder' (field), 'setMultipler()' (setter method), and 'ArithmeticPresentationLayer()' (constructor) in ArithmeticPresentationLayer class.
+
+ 4 files changed, 6 insertions(+)

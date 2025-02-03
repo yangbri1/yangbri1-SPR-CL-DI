@@ -26,16 +26,19 @@ import org.springframework.stereotype.Component;
 @Component
 public class ArithmeticPresentationLayer {
 
+    // @Autowired annotation via field injection
     @Autowired
-    private Adder adder;
+    private Adder adder; 
     private Multiplier multiplier;
     private Squarer squarer;
 
+    // @Autowired annotation via setter injection
     @Autowired
     public void setMultiplier(Multiplier multiplier) {
         this.multiplier = multiplier;
     }
 
+    // @Autowired annotation via constructor injection
     @Autowired
     public ArithmeticPresentationLayer(Squarer squarer) {
         this.squarer = squarer;

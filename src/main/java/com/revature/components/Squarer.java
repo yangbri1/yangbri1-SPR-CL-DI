@@ -15,6 +15,8 @@ public class Squarer {
     /**
      * TODO: Inject this field
      */
+
+    // @Autowired annotation via field injection
     @Autowired
     Multiplier multiplier;
 
